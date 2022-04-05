@@ -61,6 +61,10 @@ letter-spacing: 0.02em;
   color: var(--accent-color);
 }
 
+.header-link.current {
+  color: var(--accent-color);
+}
+
 /* Hero section */
 
 .hero-section-background {
@@ -91,6 +95,19 @@ background-color: var(--accent-color);
 }
 
 /* Features section */
+
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
 
 .features-title {
 font-weight: 700;
@@ -123,12 +140,18 @@ color: var(--primary-title-color);
 .team-section {
   background-color: var(--background-gray-color);
 }
+
+.team-member {
+  background-color: var(--white-color);
+}
+
 .name {
 font-weight: 500;
 font-size: 16px;
 line-height: 1.19;
 text-align: center;
 letter-spacing: 0.03em;
+color: var(--primary-title-color);
 }
 
 .job-title {
@@ -164,12 +187,17 @@ letter-spacing: 0.03em;
 
   .address-item.address-link {
     color: rgba(255, 255, 255, 0.6)
-
   }
+
+  .address-item:hover,
+  .address-item:focus {
+    color: var(--accent-color);
+  }
+
 
   /* Portfolio page */
 
-  /* Filter */
+ /* Portfolio section */
   .filter-button {
     font-family: inherit;  
     font-weight: 500;
@@ -187,16 +215,16 @@ letter-spacing: 0.03em;
     background-color: var(--accent-color);
   }
 
-  /* Portfolio section */
+  
   .project-name {
     font-weight: 700;
     font-size: 18px;
-    line-height: 2x;
+    line-height: 2;
     letter-spacing: 0.06em;
     color: var(--primary-title-color) 
   }
-.project-type {
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 1.88;
-  letter-spacing: 0.03em;}
+  .project-type {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;}
