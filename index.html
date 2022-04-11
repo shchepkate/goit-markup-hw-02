@@ -8,43 +8,50 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <title>Студия</title>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet"
         />
-    <title>Студия</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/styles.css">
+    
   </head>
 
   <body>
     <!-- Header section -->
     <header class="header">
+      <div class="container header-nav">
       <a href="/" lang="en" class="header-logo link"><span class="accent-text">Web</span>Studio</a>
-      <nav>
-        <ul class="list">
-          <li><a href="" class="link header-link current">Студия</a></li>
-          <li><a href="./portfolio.html" class="link header-link">Портфолио</a></li>
-          <li><a href="" class="link header-link">Контакты</a></li>
+      <nav> 
+        <ul class="list nav-list">
+          <li class="item"><a href="" class="link header-link current">Студия</a></li>
+          <li class="item"><a href="./portfolio.html" class="link header-link">Портфолио</a></li>
+          <li class="item"><a href="" class="link header-link">Контакты</a></li>
         </ul>
       </nav>
 
-      <ul class="list">
-        <li><a href="mailto:info@devstudio.com" class="link tel-link">info@devstudio.com</a></li>
-        <li><a href="tel:+380961111111" class="link tel-link">+38 096 111 11 11</a></li>
+      <ul class="list contact-list">
+        <li class="item"><a href="mailto:info@devstudio.com" class="link tel-link">info@devstudio.com</a></lшi>
+        <li class="item"><a href="tel:+380961111111" class="link tel-link">+38 096 111 11 11</a></li>
       </ul>
+    </div>
     </header>
+
 
     <main>
       <!-- Hero section -->
-      <section class="hero-section-background">
-        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
-        <button type="button" class="btn hero-button">Заказать услугу</button>
+      <section class="hero-section">
+        <div class="hero-container">
+          <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+          <button type="button" class="btn hero-button">Заказать услугу</button>
+        </div>
       </section>
 
       <!-- Features section -->
-      <section>
+      <section class="container features-container">
         <h2 class="visually-hidden">Особенности</h2>
 
-        <ul class="list">
-          <li>
+        <ul class="list features-list">
+          <li class="features-item">
             <h3 class="features-title">Внимание к деталям</h3>
             <p class="features-text">
               Идейные соображения, а также начало повседневной работы по
@@ -52,7 +59,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="features-item">
             <h3 class="features-title">Пунктуальность</h3>
             <p class="features-text">
               Задача организации, в особенности же рамки и место обучения кадров
@@ -60,7 +67,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="features-item">
             <h3 class="features-title">Планирование</h3>
             <p class="features-text">
               Равным образом консультация с широким активом в значительной
@@ -68,7 +75,7 @@
             </p>
           </li>
 
-          <li>
+          <li class="features-item">
             <h3 class="features-title">Современные технологии</h3>
             <p class="features-text">
               Значимость этих проблем настолько очевидна, что реализация
@@ -79,24 +86,24 @@
       </section>
 
       <!-- Work section -->
-      <section>
+      <section  class="container work-container">
         <h2 class="section-title">Чем мы занимаемся</h2>
-        <ul class="list">
-          <li>
+        <ul class="list works">
+          <li class="work-item">
             <img
               src="./images/box1-structuring.jpg"
               alt="Создание структуры сайта"
               width="370"
             />
           </li>
-          <li>
+          <li class="work-item">
             <img
               src="./images/box2-mobileapp.jpg"
               alt="Создание веб-приложений"
               width="370"
             />
           </li>
-          <li>
+          <li class="work-item">
             <img
               src="./images/box3-webdesign.jpg"
               alt="Создание дизайна сайта"
@@ -107,9 +114,10 @@
       </section>
 
       <!-- Team section -->
-      <section class="team-section">
-        <h2 class="section-title">Наша команда</h2>
-        <ul class="list">
+      <section class="section team-section container">
+        <h2 class="section-title team-section-title">Наша команда</h2>
+
+        <ul class="list team-list team-container">
           <li class="team-member">
             <img
               src="./images/img1-manwithglasses1.jpg"
@@ -156,21 +164,24 @@
     <!-- Footer section -->
      
      <footer class="footer-section">
+       <div class="container">
+
       <a href="/" lang="en" class="footer-logo link"><span class="accent-text">Web</span>Studio</a>
       <address>
         <ul class="list">
-          <li>
-            <a class="link address-item"
+          <li class="address-item">
+            <a class="link"
               href="https://goo.gl/maps/KtKULsSCK2TDFwCBA"
               target="_blank"
               rel="noopener noreferrer"
               >г. Киев, пр-т Леси Украинки, 26</a
             >
           </li>
-          <li><a class="link address-item address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
-          <li><a class="link address-item address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+          <li class="address-item"><a class="link address-link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+          <li class="address-item"><a class="link address-link" href="tel:+380961111111">+38 096 111 11 11</a></li>
         </ul>
       </address>
+    </div>
     </footer>
 
   </body>
